@@ -9,7 +9,7 @@
 class trie {
 public: 
     static constexpr std::size_t K = 10; // K most common words
-
+    trie();
     void build(const std::vector<std::string>& rankedWords);
 
     std::vector<std::string> suggest(const std::string& prefix) const;
